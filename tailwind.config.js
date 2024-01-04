@@ -16,7 +16,7 @@ export default {
         'OffBlack' : 'hsl(0, 0%, 8%)',
       },
       fontFamily:{
-        primary : "Poppins",
+        primary : 'poppins',
       }
     },
   },

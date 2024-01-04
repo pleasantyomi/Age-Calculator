@@ -105,10 +105,10 @@ const Container = () => {
               name="birth-day"
               min="1"
               max="12"
-              placeholder="MM"
+              placeholder="DD"
               onChange={handleDayChange}
               required
-              className={`outline outline-[1px] outline-LightGrey rounded-md lg:h-[4rem] lg:w-[9rem] w-full h-[3rem] px-2 uppercase font-extrabold lg:text-3xl text-2xl focus:outline-Purple ${isInvalidDate(BirthMonth, BirthDay, BirthYear) ? 'border border-LightRed' : ''}`}
+              className={`outline outline-[1px] outline-LightGrey rounded-md lg:h-[4rem] lg:w-[9rem] w-full h-[3rem] px-2 uppercase font-semibold lg:text-3xl text-2xl focus:outline-Purple ${isInvalidDate(BirthMonth, BirthDay, BirthYear) ? 'border border-LightRed' : ''}`}
             />
 
           </div>
@@ -119,10 +119,10 @@ const Container = () => {
               name="birth-month"
               min="1"
               max="31"
-              placeholder="DD"
+              placeholder="MM"
               onChange={handleMonthChange}
               required
-              className={`outline outline-[1px] outline-LightGrey rounded-md lg:h-[4rem] lg:w-[9rem] w-full h-[3rem] px-2 uppercase font-extrabold lg:text-3xl text-2xl focus:outline-Purple ${isInvalidDate(BirthMonth, BirthDay, BirthYear) ? 'border border-LightRed' : ''}`}
+              className={`outline outline-[1px] outline-LightGrey rounded-md lg:h-[4rem] lg:w-[9rem] w-full h-[3rem] px-2 uppercase font-semibold lg:text-3xl text-2xl focus:outline-Purple ${isInvalidDate(BirthMonth, BirthDay, BirthYear) ? 'border border-LightRed' : ''}`}
             />
           </div>
           <div className="grid gap-2">
@@ -135,7 +135,7 @@ const Container = () => {
               placeholder="YYYY"
               onChange={handleYearChange}
               required
-              className={`outline outline-[1px] outline-LightGrey rounded-md lg:h-[4rem] lg:w-[9rem] w-full h-[3rem] px-2 uppercase font-extrabold lg:text-3xl text-2xl focus:outline-Purple ${
+              className={`outline outline-[1px] outline-LightGrey rounded-md lg:h-[4rem] lg:w-[9rem] w-full h-[3rem] px-2 uppercase font-semibold lg:text-3xl text-2xl focus:outline-Purple ${
                 isInvalidDate(BirthMonth, BirthDay, BirthYear) ? 'border border-LightRed' : ''
               }`}
             />
@@ -167,7 +167,7 @@ const Container = () => {
         {/* Divider and Button ends */}
 
         {/* Display Section */}
-        <div className="lg:pt-10 pt-20 font-black italic lg:text-[6rem] text-[3rem] leading-none text-Purple">
+        <div className="lg:pt-10 pt-20 font-[800] italic lg:text-[6rem] text-[3rem] leading-none text-Purple">
           <div className="flex gap-2 items-center">
             <p>
               <span>{Years}</span>
