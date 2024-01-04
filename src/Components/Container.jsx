@@ -35,6 +35,10 @@ const Container = () => {
     if (month === 2 && day > 29) {
       return true;
     }
+    
+    if (day === 0 || month === 0 || year === 0) {
+      return true;
+      }
 
     return false;
   };
