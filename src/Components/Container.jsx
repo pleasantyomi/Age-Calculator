@@ -106,6 +106,7 @@ const Container = () => {
               min="1"
               max="12"
               placeholder="DD"
+              type="number"
               onChange={handleDayChange}
               required
               className={`outline outline-[1px] outline-LightGrey rounded-md lg:h-[4rem] lg:w-[9rem] w-full h-[3rem] px-2 uppercase font-semibold lg:text-3xl text-2xl focus:outline-Purple ${isInvalidDate(BirthMonth, BirthDay, BirthYear) ? 'border border-LightRed' : ''}`}
@@ -119,6 +120,7 @@ const Container = () => {
               name="birth-month"
               min="1"
               max="31"
+              type="number"
               placeholder="MM"
               onChange={handleMonthChange}
               required
@@ -131,6 +133,7 @@ const Container = () => {
               id="birth-year"
               name="birth-year"
               min="1000"
+              type="number"
               max={CurrentYear}
               placeholder="YYYY"
               onChange={handleYearChange}
