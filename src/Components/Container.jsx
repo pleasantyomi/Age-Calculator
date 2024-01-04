@@ -120,7 +120,7 @@ const Container = () => {
               min="1"
               max="31"
               placeholder="DD"
-              onChange={handleDayChange}
+              onChange={handleMonthChange}
               required
               className={`outline outline-[1px] outline-LightGrey rounded-md lg:h-[4rem] lg:w-[9rem] w-full h-[3rem] px-2 uppercase font-extrabold lg:text-3xl text-2xl focus:outline-Purple ${isInvalidDate(BirthMonth, BirthDay, BirthYear) ? 'border border-LightRed' : ''}`}
             />
@@ -133,7 +133,7 @@ const Container = () => {
               min="1000"
               max={CurrentYear}
               placeholder="YYYY"
-              onChange={handleDayChange}
+              onChange={handleYearChange}
               required
               className={`outline outline-[1px] outline-LightGrey rounded-md lg:h-[4rem] lg:w-[9rem] w-full h-[3rem] px-2 uppercase font-extrabold lg:text-3xl text-2xl focus:outline-Purple ${
                 isInvalidDate(BirthMonth, BirthDay, BirthYear) ? 'border border-LightRed' : ''
